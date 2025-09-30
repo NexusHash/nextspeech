@@ -117,8 +117,6 @@ export default function STT() {
             <option value="zu">Zulu</option>
           </select>
         </div>
-        <button className="btn-control" onClick={handleTranslate}>Translate</button>
-        <button className="btn-control" onClick={speakTranslation} disabled={!translatedText}>Speak Translation</button>
       </div>
 
       <textarea
@@ -127,6 +125,10 @@ export default function STT() {
         readOnly
         placeholder="Translated text will appear here..."
       />
+        <div className="tts-controls">
+        <button className="btn-control" onClick={handleTranslate}>Translate</button>
+        <button className="btn-control" onClick={speakTranslation} disabled={!translatedText}>Speak Translation</button>
+        </div>
     </div>
   );
 }
