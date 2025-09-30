@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    background: rgba(0, 0, 0, 0.461);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(142, 142, 142, 0.3);
+    padding: 20px;
+
+    .footerleft{
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        .footerlogo {
+            width: 30px;
+        }
+    }
+
+    .footerright{
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .tm {
+            color: rgb(137, 137, 137);
+            font-weight: 300;
+            font-size: 13px;
+        }
+    }
+}
